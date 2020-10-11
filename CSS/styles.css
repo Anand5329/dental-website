@@ -24,3 +24,12 @@ h1 {
 p {
   font-size: 2rem;
 }
+
+.small-img {
+  height: 200px;
+  margin: 1rem;
+}
+
+.navbar {
+  background-color: #EAB2E2;
+}
