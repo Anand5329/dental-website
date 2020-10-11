@@ -1,1 +1,26 @@
 /* Main stylesheet */
+.center {
+  align-items: center;
+  text-align: center;
+}
+
+.pad10 {
+  padding: 2rem 10rem;
+}
+
+.leftText {
+  text-align: left;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+p {
+  font-size: 2rem;
+}
