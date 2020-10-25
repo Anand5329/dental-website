@@ -8,6 +8,10 @@
   padding: 2rem 10rem;
 }
 
+.no-pad {
+  padding: 0;
+}
+
 .leftText {
   text-align: left;
 }
@@ -17,16 +21,26 @@
   color: white;
 }
 
-h1 {
+.white {
+  background-color: white;
+  color: black;
+}
+
+h1 { /* Heading */
   font-size: 7rem;
 }
 
-h4 {
+h4 { /* Sub Heading */
   font-size: 4rem;
 }
 
-p {
+p { /* Para */
   font-size: 2rem;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 1;
 }
 
 .small-img {
@@ -44,6 +58,10 @@ p {
 
 .icon {
   font-size: 50px;
+}
+
+.treatments {
+  margin-top: 206px;
 }
 
 .sidenav {
@@ -66,4 +84,9 @@ p {
 .content {
   margin-left: 300px;
   padding: 0 1rem;
+  z-index: 0;
+}
+
+.treatment {
+  padding: 1rem;
 }
