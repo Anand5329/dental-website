@@ -21,6 +21,10 @@ h1 {
   font-size: 7rem;
 }
 
+h4 {
+  font-size: 4rem;
+}
+
 p {
   font-size: 2rem;
 }
@@ -40,4 +44,26 @@ p {
 
 .icon {
   font-size: 50px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  padding: 1rem 1rem;
+  left: 0;
+  overflow-x: hidden;
+  background-color: #EAB2E2;
+}
+
+.sidenav a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.content {
+  margin-left: 300px;
+  padding: 0 1rem;
 }
