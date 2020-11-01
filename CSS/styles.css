@@ -55,7 +55,10 @@ p { /* Para */
 .head{
   background-color: #c2dafe;
   color: black;
-  word-wrap: break-word;
+}
+
+.wrap {
+  word-wrap: break-word;  
 }
 
 .margin {
