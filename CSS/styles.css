@@ -1,7 +1,28 @@
 /* Main stylesheet */
 .center {
-  align-items: center;
+  display: flex;
   text-align: center;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.top {
+color: white;
+/*bluelagoo*/
+background: #0052D4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+/* cool sky */
+/* background: #2980B9;  /* fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.full-height {
+  height: 100vh;
 }
 
 .pad10 {
@@ -44,7 +65,8 @@ p { /* Para */
 }
 
 .accent {
-  background-color: #86B6FE;
+  background: #0052D4;
+  background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
   color: white!important;
 }
 
@@ -58,7 +80,7 @@ p { /* Para */
 }
 
 .wrap {
-  word-wrap: break-word;  
+  word-wrap: break-word;
 }
 
 .margin {
