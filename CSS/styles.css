@@ -75,8 +75,12 @@ background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+
   color: white!important;
 }
 
-.accent a {
+.accent a, .accent i {
   color: white!important;
+}
+
+a.active {
+  color: pink!important;
 }
 
 .wrap {

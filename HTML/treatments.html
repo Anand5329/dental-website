@@ -18,9 +18,9 @@
   <!-- icons -->
   <script src="https://kit.fontawesome.com/798fcfe915.js" crossorigin="anonymous"></script>
 
-  <script type="text/javascript" src="../Scripts/reflexive.js">
+  <script type="text/javascript" src="../Scripts/reflexive.js"></script>
+  <script type="text/javascript" src="../Scripts/treatments.js"></script>
 
-  </script>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
   <nav class="navbar navbar-expand-lg sticky-top navbar-light accent">
     <a class="navbar-brand navbar-font-size" href="main.html"><i class="fas fa-home"></i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fas fa-bars"></i>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -62,14 +62,24 @@
   </div>
 
 <div class="container-fluid no-pad treatments">
-  <div class="sidenav accent">
-    <a href="#root-canal">Root Canal</a>
-    <a href="#"></a>
+  <div class="sidenav accent" id="treatment-navbar">
+    <a scroll="root-canal" href="javascript:void(0)" onclick="scrollToTreatment('root-canal');">Root Canal</a>
+    <a scroll="second" href="javascript:void(0)" onclick="scrollToTreatment('second')">Second</a>
     <a href="#"></a>
     <a href="#"></a>
   </div>
 
-  <div class="content white">
+  <div class="content white" id="treatment-content">
+    <div class="treatment" id="intro">
+      <h4 class="sub-head">Intro</h4>
+      <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+         reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+           culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
     <div class="treatment" id="root-canal">
       <h4 class="sub-head">Root Canal</h4>
       <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -79,6 +89,17 @@
          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
            culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="treatment" id="second">
+      <h4 class="sub-head">Second</h4>
+      <p class="para">Duis aute irure dolor in
+      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+       pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+           nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </div>
 </div>
