@@ -23,8 +23,18 @@
   <!-- styles.css -->
   <link rel="stylesheet" href="../CSS/styles.css">
 
+  <!--scripts -->
+  <script type="text/javascript" src="../Scripts/reflexive.js"></script>
+  <script type="text/javascript" src="../Scripts/functionality.js"></script>
+
   <!-- icons -->
   <script src="https://kit.fontawesome.com/798fcfe915.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#exp").text(getYearsOfExperience());
+    });
+  </script>
 </head>
 
 <body>
@@ -63,15 +73,15 @@
 
   <!-- Intro with profile pic -->
   <div class="container-fluid top full-height center" id="top">
-    <div class="row center pad10">
-      <div class="col">
-        <h1 class="head">Introduction</h1>
-        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-           nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="row center pad">
+      <div class="col-sm-12 col-md-6">
+        <h1 class="head pad wrap">Dr. Parul Doshi</h1>
+        <p class="para">Dr. Parul has graduated from Government Dental College, Mumbai in 1991.
+          She has <span id="exp">0</span> years of experience in practicing general dentistry.
+          She is passionate about working, and she has made a reputation among her patients.
+        </p>
       </div>
-      <div class="col center">
+      <div class="col-sm-12 col-md-6 center">
         <img src="../Pictures/profile.png" alt="Profile Pic">
       </div>
     </div>
@@ -79,12 +89,14 @@
 
   <!-- Location -->
   <div class="container-fluid white full-height center">
-    <div class="row center pad10">
+    <div class="row center pad">
       <div class="col center">
-        <img src="../Pictures/map.png" alt="Map" class="small-img">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.778836137856!2d72.83273101489971!3d18.985372387140014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cfca84d18c33%3A0x6f4977331841031f!2sDr.%20Parul%20Doshi&#39;s%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1627106165924!5m2!1sen!2sin"
+        style="border:0;" allowfullscreen="" loading="lazy" id="map"></iframe>
       </div>
-      <div class="col leftText">
-        <h1 class="sub-head">Where are we?</h1>
+
+      <div class="col leftText pad">
+        <h1 class="sub-head pad">Where are we?</h1>
         <p class="para">Shop no. 1, Gala Tower,</p>
         <p class="para">B.B, Mukund Marg, Chinchpokli,</p>
         <p class="para">Mumbai, Maharashtra 400012.</p>
@@ -94,9 +106,9 @@
 
   <!-- Clinic pics -->
   <div class="container-fluid off-white full-height center">
-    <div class="row center pad10">
+    <div class="row center pad">
       <div class="col center wrap">
-        <h1 class="sub-head">The Clinic</h1>
+        <h1 class="sub-head pad">The Clinic</h1>
         <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
            sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
       </div>
@@ -111,12 +123,21 @@
 
   <!-- Meet the Team -->
   <div class="container-fluid white full-height center">
-    <div class="row center pad10">
+    <div class="row center pad">
       <div class="col center">
-        <img src="../Pictures/people.jpg" alt="Team" class="small-img">
+        <div id="carousel-staff" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../Pictures/staff-1.jpg" alt="Team" class="large-img">
+            </div>
+            <div class="carousel-item">
+              <img src="../Pictures/staff-2.jpg" alt="Team" class="large-img">
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col center wrap">
-        <h1 class="sub-head">Meet the Team</h1>
+        <h1 class="sub-head pad">Meet the Team</h1>
         <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
            sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
       </div>
@@ -125,7 +146,7 @@
 
   <!-- Footer -->
   <div class="container-fluid accent">
-    <div class="row center pad10">
+    <div class="row center pad">
       <div class="col">
           <i class="fas fa-phone-alt"> 1234567890</i>
       </div>

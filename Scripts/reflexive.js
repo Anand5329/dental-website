@@ -29,45 +29,17 @@ isMobile = function() {
 }
 
 toMob = function() {
+  $("body").addClass('mobile');
+
   var sidebar = $(".sidenav");
   sidebar.hide();
-
-  var content = $(".content");
-  content.css("margin-left","0");
-
-  var h1 = $("h1");
-  h1.css("font-size", "4rem")
-  h1.addClass("wrap");
-
-  var h4 = $("h4")
-  h4.css("font-size", "2rem")
-
-  var p = $("p")
-  p.css("font-size", "1rem");
-
-  var pad = $(".pad10");
-  pad.css("padding", "1rem")
 }
 
 toDesktop = function() {
+  $("body").removeClass('mobile');
+
   var sidebar = $(".sidenav");
   sidebar.show();
-
-  var content = $(".content");
-  content.css("margin-left","300px");
-
-  var h1 = $("h1");
-  h1.css("font-size", "7rem")
-  h1.removeClass("wrap");
-
-  var h4 = $("h4")
-  h4.css("font-size", "4rem")
-
-  var p = $("p")
-  p.css("font-size", "2rem");
-
-  var pad = $(".pad10");
-  pad.css("padding", "2rem 10rem")
 }
 
 changeMode = function(isMob) {
